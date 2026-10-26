@@ -79,7 +79,25 @@
 				<Event name="Selection">КонтактыСегодняВыбор</Event>
 			</Events>
 			<ChildItems>
+				<InputField name="КодТемпературы" id="137">
+					<DataPath>КонтактыСегодня.КодТемпературы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>1</Width>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодТемпературыКонтекстноеМеню" id="138"/>
+					<ExtendedTooltip name="КодТемпературыРасширеннаяПодсказка" id="139"/>
+				</InputField>
+				<InputField name="КонтактыСегодняПрезентацияСтрокой" id="133">
+					<DataPath>КонтактыСегодня.ПрезентацияСтрокой</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КонтактыСегодняПрезентацияСтрокойКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="КонтактыСегодняПрезентацияСтрокойРасширеннаяПодсказка" id="135"/>
+				</InputField>
 				<ColumnGroup name="ГруппаСтрокаКарточки" id="109">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -92,53 +110,42 @@
 							<v8:content>Группа строка карточки</v8:content>
 						</v8:item>
 					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
 					<Group>Horizontal</Group>
 					<ExtendedTooltip name="ГруппаСтрокаКарточкиРасширеннаяПодсказка" id="110"/>
 					<ChildItems>
-						<InputField name="КонтактыСегодняПредставление" id="43">
-							<DataPath>КонтактыСегодня.Представление</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
-							<HorizontalStretch>true</HorizontalStretch>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КонтактыСегодняПредставлениеКонтекстноеМеню" id="44"/>
-							<ExtendedTooltip name="КонтактыСегодняПредставлениеРасширеннаяПодсказка" id="45"/>
-						</InputField>
-						<InputField name="КонтактыСегодняИндикаторТемпературы" id="39">
-							<DataPath>КонтактыСегодня.ИндикаторТемпературы</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
-							<AutoEditMode>true</AutoEditMode>
-							<Width>2</Width>
-							<HorizontalStretch>false</HorizontalStretch>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КонтактыСегодняИндикаторТемпературыКонтекстноеМеню" id="40"/>
-							<ExtendedTooltip name="КонтактыСегодняИндикаторТемпературыРасширеннаяПодсказка" id="41"/>
-						</InputField>
 						<InputField name="КонтактыСегодняВремя" id="35">
 							<DataPath>КонтактыСегодня.Время</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
 							<AutoEditMode>true</AutoEditMode>
-							<Width>6</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="КонтактыСегодняВремяКонтекстноеМеню" id="36"/>
 							<ExtendedTooltip name="КонтактыСегодняВремяРасширеннаяПодсказка" id="37"/>
 						</InputField>
-						<InputField name="КонтактыСегодняСтатусТекст" id="47">
-							<DataPath>КонтактыСегодня.СтатусТекст</DataPath>
+						<InputField name="КонтактыСегодняИндикаторТемпературы" id="39">
+							<DataPath>КонтактыСегодня.ИндикаторТемпературы</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Center</HorizontalAlign>
 							<EditMode>EnterOnInput</EditMode>
-							<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
 							<AutoEditMode>true</AutoEditMode>
-							<Width>4</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КонтактыСегодняСтатусТекстКонтекстноеМеню" id="48"/>
-							<ExtendedTooltip name="КонтактыСегодняСтатусТекстРасширеннаяПодсказка" id="49"/>
+							<ContextMenu name="КонтактыСегодняИндикаторТемпературыКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="КонтактыСегодняИндикаторТемпературыРасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<InputField name="КонтактыСегодняПредставление" id="43">
+							<DataPath>КонтактыСегодня.Представление</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterFont ref="style:NormalTextFont" kind="StyleItem" scale="100"/>
+							<AutoEditMode>true</AutoEditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КонтактыСегодняПредставлениеКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="КонтактыСегодняПредставлениеРасширеннаяПодсказка" id="45"/>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
@@ -349,6 +356,21 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПрезентацияСтрокой" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Презентация строкой</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>

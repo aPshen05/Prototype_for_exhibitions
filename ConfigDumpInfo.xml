@@ -54,12 +54,12 @@
 		</Metadata>
 		<Metadata name="CommonForm.ГлавныйЭкран" id="24c0ce13-b539-4dd9-9c45-ed0ca1fc59ba" configVersion="a56b9496e5f27c41a1fb25e2e1141c6000000000"/>
 		<Metadata name="CommonForm.ГлавныйЭкран.Form" id="24c0ce13-b539-4dd9-9c45-ed0ca1fc59ba.0" configVersion="5f3722da4e82a14086aae4be752b6afe00000000"/>
-		<Metadata name="CommonForm.ЭкранВыставки" id="1375c226-193e-4d3b-a58f-2ebe41f143a8" configVersion="e253eba60ce2074f8805dd1d564cd55800000000"/>
-		<Metadata name="CommonForm.ЭкранВыставки.Form" id="1375c226-193e-4d3b-a58f-2ebe41f143a8.0" configVersion="56c6458e043d3445966aaeb829b4cb6d00000000"/>
+		<Metadata name="CommonForm.ЭкранВыставки" id="1375c226-193e-4d3b-a58f-2ebe41f143a8" configVersion="4c396d1dd35a0643893e84447ab0432d00000000"/>
+		<Metadata name="CommonForm.ЭкранВыставки.Form" id="1375c226-193e-4d3b-a58f-2ebe41f143a8.0" configVersion="e8f6bc1fcd890641be2b293cee791ecd00000000"/>
 		<Metadata name="CommonModule.РаботаСВыставкамиСервер" id="ee904d99-a0a2-4d96-ac21-f87dd0fa14ab" configVersion="e132fec35e59504f8833f699d930e1ed00000000"/>
 		<Metadata name="CommonModule.РаботаСВыставкамиСервер.Module" id="ee904d99-a0a2-4d96-ac21-f87dd0fa14ab.0" configVersion="a62129c4a2d2814183603240047164a000000000"/>
-		<Metadata name="Configuration.Конфигурация" id="1fed798e-7c75-4361-a8a1-3dd6067084c7" configVersion="4edd7f2b1392a74784cde0674a106ba500000000"/>
-		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="a7e2d26c-212b-4241-b8c8-7e855bd80413.8" configVersion="2278981e12b85947997654640b717ae300000000"/>
+		<Metadata name="Configuration.Конфигурация" id="1fed798e-7c75-4361-a8a1-3dd6067084c7" configVersion="a48a28f34bc1c14995d7eb9cebfde20500000000"/>
+		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="a7e2d26c-212b-4241-b8c8-7e855bd80413.8" configVersion="57f581554408c7418f049763f6cab8ff00000000"/>
 		<Metadata name="Constant.ДатаВыбораВыставки" id="3c1a9519-ee2c-4ee2-a393-77c927b3acb5" configVersion="88cea1a5466e5c4ab4a538fa6620561e00000000"/>
 		<Metadata name="Constant.ИдентификаторМенеджера" id="15f8f252-2e99-4278-8dc1-3c32cad6f4b3" configVersion="f0a8d89c48ea074daabde8c7fbbf849300000000"/>
 		<Metadata name="Constant.ТекущаяВыставка" id="3a38a171-f8b7-4564-b6b5-eb0ab2811d86" configVersion="a4a1f1898ffece44861c7128ad1844cd00000000"/>
