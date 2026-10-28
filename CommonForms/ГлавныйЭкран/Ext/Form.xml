@@ -3,9 +3,10 @@
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>Выставка</v8:content>
+			<v8:content>Выставки</v8:content>
 		</v8:item>
 	</Title>
+	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>None</CommandBarLocation>
 	<ShowCommandBar>false</ShowCommandBar>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -17,17 +18,6 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<LabelDecoration name="НадписьВыберитеВыставку" id="3">
-			<TextColor>pal:Gray</TextColor>
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выберите выставку</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="НадписьВыберитеВыставкуКонтекстноеМеню" id="4"/>
-			<ExtendedTooltip name="НадписьВыберитеВыставкуРасширеннаяПодсказка" id="5"/>
-		</LabelDecoration>
 		<UsualGroup name="ГруппаКарточкиВыставок" id="137">
 			<Title>
 				<v8:item>

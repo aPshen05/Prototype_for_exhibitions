@@ -307,8 +307,8 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.Контакты.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
-			<DefaultListForm/>
-			<DefaultChoiceForm/>
+			<DefaultListForm>Catalog.Контакты.Form.ФормаЗаписиЗаметки</DefaultListForm>
+			<DefaultChoiceForm>Catalog.Контакты.Form.ФормаПросмотраФото</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -1119,6 +1119,8 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>ФормаЭлемента</Form>
+			<Form>ФормаЗаписиЗаметки</Form>
+			<Form>ФормаПросмотраФото</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

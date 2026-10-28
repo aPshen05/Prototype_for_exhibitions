@@ -164,19 +164,19 @@
 				</app:functionality>
 				<app:functionality>
 					<app:functionality>MusicLibrary</app:functionality>
-					<app:use>false</app:use>
+					<app:use>true</app:use>
 				</app:functionality>
 				<app:functionality>
 					<app:functionality>PictureAndVideoLibraries</app:functionality>
-					<app:use>false</app:use>
+					<app:use>true</app:use>
 				</app:functionality>
 				<app:functionality>
 					<app:functionality>AudioPlaybackAndVibration</app:functionality>
-					<app:use>false</app:use>
+					<app:use>true</app:use>
 				</app:functionality>
 				<app:functionality>
 					<app:functionality>BackgroundAudioPlaybackAndVibration</app:functionality>
-					<app:use>false</app:use>
+					<app:use>true</app:use>
 				</app:functionality>
 				<app:functionality>
 					<app:functionality>InstallPackages</app:functionality>

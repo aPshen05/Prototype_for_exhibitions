@@ -62,6 +62,7 @@
 					<v8:content>Страницы режима</v8:content>
 				</v8:item>
 			</ToolTip>
+			<VerticalStretch>false</VerticalStretch>
 			<PagesRepresentation>None</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыРежимаРасширеннаяПодсказка" id="164"/>
 			<ChildItems>
@@ -78,6 +79,7 @@
 							<v8:content>Страница из базы</v8:content>
 						</v8:item>
 					</ToolTip>
+					<VerticalStretch>false</VerticalStretch>
 					<ExtendedTooltip name="СтраницаИзБазыРасширеннаяПодсказка" id="166"/>
 					<ChildItems>
 						<InputField name="Партнер" id="359">
@@ -101,6 +103,7 @@
 							<v8:content>Страница новый</v8:content>
 						</v8:item>
 					</ToolTip>
+					<VerticalStretch>false</VerticalStretch>
 					<ExtendedTooltip name="СтраницаНовыйРасширеннаяПодсказка" id="168"/>
 					<ChildItems>
 						<InputField name="НаименованиеОрганизации1" id="195">
@@ -341,7 +344,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа медиа</v8:content>
+					<v8:content>ГруппаМедиа</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -350,6 +353,7 @@
 					<v8:content>Группа медиа</v8:content>
 				</v8:item>
 			</ToolTip>
+			<VerticalStretch>false</VerticalStretch>
 			<Group>HorizontalIfPossible</Group>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаМедиаРасширеннаяПодсказка" id="259"/>
@@ -380,6 +384,103 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
+		<Table name="ТаблицаВложений" id="547">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<Header>false</Header>
+			<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>СписокВложений</DataPath>
+			<RowPictureDataPath>~СписокВложений.DefaultPicture</RowPictureDataPath>
+			<GroupVerticalAlign>Top</GroupVerticalAlign>
+			<ShowCommandBar>false</ShowCommandBar>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="ТаблицаВложенийКонтекстноеМеню" id="548"/>
+			<AutoCommandBar name="ТаблицаВложенийКоманднаяПанель" id="549">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаВложенийРасширеннаяПодсказка" id="550"/>
+			<SearchStringAddition name="ТаблицаВложенийСтрокаПоиска" id="551">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>ТаблицаВложений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаВложенийСтрокаПоискаКонтекстноеМеню" id="552"/>
+				<ExtendedTooltip name="ТаблицаВложенийСтрокаПоискаРасширеннаяПодсказка" id="553"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаВложенийСостояниеПросмотра" id="554">
+				<ToolTipRepresentation>None</ToolTipRepresentation>
+				<AdditionSource>
+					<Item>ТаблицаВложений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаВложенийСостояниеПросмотраКонтекстноеМеню" id="555"/>
+				<ExtendedTooltip name="ТаблицаВложенийСостояниеПросмотраРасширеннаяПодсказка" id="556"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаВложенийУправлениеПоиском" id="557">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>ТаблицаВложений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаВложенийУправлениеПоискомКонтекстноеМеню" id="558"/>
+				<ExtendedTooltip name="ТаблицаВложенийУправлениеПоискомРасширеннаяПодсказка" id="559"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТаблицаВложенийВыбор</Event>
+				<Event name="OnActivateRow">ТаблицаВложенийПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ТаблицаВложенийВид" id="568">
+					<DataPath>СписокВложений.Вид</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="ТаблицаВложенийВидКонтекстноеМеню" id="569"/>
+					<ExtendedTooltip name="ТаблицаВложенийВидРасширеннаяПодсказка" id="570"/>
+				</LabelField>
+				<LabelField name="ТаблицаВложенийДлительностьСекунд" id="572">
+					<DataPath>СписокВложений.ДлительностьСекунд</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="ТаблицаВложенийДлительностьСекундКонтекстноеМеню" id="573"/>
+					<ExtendedTooltip name="ТаблицаВложенийДлительностьСекундРасширеннаяПодсказка" id="574"/>
+				</LabelField>
+				<LabelField name="ТаблицаВложенийСсылка" id="644">
+					<DataPath>СписокВложений.Ссылка</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="ТаблицаВложенийСсылкаКонтекстноеМеню" id="645"/>
+					<ExtendedTooltip name="ТаблицаВложенийСсылкаРасширеннаяПодсказка" id="646"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
 		<LabelField name="СтрокаВложений" id="369">
 			<DataPath>СтрокаВложений</DataPath>
 			<Visible>false</Visible>
@@ -492,6 +593,81 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="СписокВложений" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список вложений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+    Вложения.Ссылка КАК Ссылка,
+    Вложения.Имя КАК Имя,
+    Вложения.Вид КАК Вид,
+    Вложения.Размер КАК Размер,
+    Вложения.ДлительностьСекунд КАК ДлительностьСекунд
+ИЗ
+    Справочник.Вложения КАК Вложения
+ГДЕ
+    Вложения.Контакт = &amp;Контакт</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Имя</dcssch:dataPath>
+					<dcssch:field>Имя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Вид</dcssch:dataPath>
+					<dcssch:field>Вид</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Размер</dcssch:dataPath>
+					<dcssch:field>Размер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлительностьСекунд</dcssch:dataPath>
+					<dcssch:field>ДлительностьСекунд</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Контакт</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контакт</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Контакты</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
 		</Attribute>
 	</Attributes>
 	<Commands>

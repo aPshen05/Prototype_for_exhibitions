@@ -10,6 +10,19 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="ШапкаНазваниеВыставки" id="156">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="style:TextLevel2" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка название выставки</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="ШапкаНазваниеВыставкиКонтекстноеМеню" id="157"/>
+			<ExtendedTooltip name="ШапкаНазваниеВыставкиРасширеннаяПодсказка" id="158"/>
+		</LabelDecoration>
 		<LabelDecoration name="БаннерНетСвязи" id="1">
 			<Visible>false</Visible>
 			<Title formatted="false">
@@ -81,6 +94,7 @@
 			<ChildItems>
 				<InputField name="КодТемпературы" id="137">
 					<DataPath>КонтактыСегодня.КодТемпературы</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoEditMode>true</AutoEditMode>
 					<Width>1</Width>
@@ -152,6 +166,7 @@
 			</ChildItems>
 		</Table>
 		<UsualGroup name="ГруппаПодвал" id="51">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
