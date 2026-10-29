@@ -384,8 +384,9 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="ТаблицаВложений" id="547">
+		<Table name="ТаблицаВложений_старая" id="547">
 			<Representation>List</Representation>
+			<Visible>false</Visible>
 			<CommandBarLocation>None</CommandBarLocation>
 			<Header>false</Header>
 			<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
@@ -408,37 +409,37 @@
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-			<ContextMenu name="ТаблицаВложенийКонтекстноеМеню" id="548"/>
-			<AutoCommandBar name="ТаблицаВложенийКоманднаяПанель" id="549">
+			<ContextMenu name="ТаблицаВложений_стараяКонтекстноеМеню" id="548"/>
+			<AutoCommandBar name="ТаблицаВложений_стараяКоманднаяПанель" id="549">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="ТаблицаВложенийРасширеннаяПодсказка" id="550"/>
-			<SearchStringAddition name="ТаблицаВложенийСтрокаПоиска" id="551">
+			<ExtendedTooltip name="ТаблицаВложений_стараяРасширеннаяПодсказка" id="550"/>
+			<SearchStringAddition name="ТаблицаВложений_стараяСтрокаПоиска" id="551">
 				<Enabled>false</Enabled>
 				<AdditionSource>
-					<Item>ТаблицаВложений</Item>
+					<Item>ТаблицаВложений_старая</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ТаблицаВложенийСтрокаПоискаКонтекстноеМеню" id="552"/>
-				<ExtendedTooltip name="ТаблицаВложенийСтрокаПоискаРасширеннаяПодсказка" id="553"/>
+				<ContextMenu name="ТаблицаВложений_стараяСтрокаПоискаКонтекстноеМеню" id="552"/>
+				<ExtendedTooltip name="ТаблицаВложений_стараяСтрокаПоискаРасширеннаяПодсказка" id="553"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="ТаблицаВложенийСостояниеПросмотра" id="554">
+			<ViewStatusAddition name="ТаблицаВложений_стараяСостояниеПросмотра" id="554">
 				<ToolTipRepresentation>None</ToolTipRepresentation>
 				<AdditionSource>
-					<Item>ТаблицаВложений</Item>
+					<Item>ТаблицаВложений_старая</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ТаблицаВложенийСостояниеПросмотраКонтекстноеМеню" id="555"/>
-				<ExtendedTooltip name="ТаблицаВложенийСостояниеПросмотраРасширеннаяПодсказка" id="556"/>
+				<ContextMenu name="ТаблицаВложений_стараяСостояниеПросмотраКонтекстноеМеню" id="555"/>
+				<ExtendedTooltip name="ТаблицаВложений_стараяСостояниеПросмотраРасширеннаяПодсказка" id="556"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="ТаблицаВложенийУправлениеПоиском" id="557">
+			<SearchControlAddition name="ТаблицаВложений_стараяУправлениеПоиском" id="557">
 				<Enabled>false</Enabled>
 				<AdditionSource>
-					<Item>ТаблицаВложений</Item>
+					<Item>ТаблицаВложений_старая</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="ТаблицаВложенийУправлениеПоискомКонтекстноеМеню" id="558"/>
-				<ExtendedTooltip name="ТаблицаВложенийУправлениеПоискомРасширеннаяПодсказка" id="559"/>
+				<ContextMenu name="ТаблицаВложений_стараяУправлениеПоискомКонтекстноеМеню" id="558"/>
+				<ExtendedTooltip name="ТаблицаВложений_стараяУправлениеПоискомРасширеннаяПодсказка" id="559"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">ТаблицаВложенийВыбор</Event>
@@ -479,6 +480,79 @@
 					<ContextMenu name="ТаблицаВложенийСсылкаКонтекстноеМеню" id="645"/>
 					<ExtendedTooltip name="ТаблицаВложенийСсылкаРасширеннаяПодсказка" id="646"/>
 				</LabelField>
+			</ChildItems>
+		</Table>
+		<Table name="ТаблицаВложений" id="726">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаФайлов</DataPath>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаВложенийКонтекстноеМеню" id="727"/>
+			<AutoCommandBar name="ТаблицаВложенийКоманднаяПанель" id="728"/>
+			<ExtendedTooltip name="ТаблицаВложенийРасширеннаяПодсказка" id="729"/>
+			<SearchStringAddition name="ТаблицаВложенийСтрокаПоиска" id="730">
+				<AdditionSource>
+					<Item>ТаблицаВложений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаВложенийСтрокаПоискаКонтекстноеМеню" id="731"/>
+				<ExtendedTooltip name="ТаблицаВложенийСтрокаПоискаРасширеннаяПодсказка" id="732"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаВложенийСостояниеПросмотра" id="733">
+				<AdditionSource>
+					<Item>ТаблицаВложений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаВложенийСостояниеПросмотраКонтекстноеМеню" id="734"/>
+				<ExtendedTooltip name="ТаблицаВложенийСостояниеПросмотраРасширеннаяПодсказка" id="735"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаВложенийУправлениеПоиском" id="736">
+				<AdditionSource>
+					<Item>ТаблицаВложений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаВложенийУправлениеПоискомКонтекстноеМеню" id="737"/>
+				<ExtendedTooltip name="ТаблицаВложенийУправлениеПоискомРасширеннаяПодсказка" id="738"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТаблицаВложенийВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТаблицаФайловСсылка" id="747">
+					<DataPath>ТаблицаФайлов.Ссылка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаФайловСсылкаКонтекстноеМеню" id="748"/>
+					<ExtendedTooltip name="ТаблицаФайловСсылкаРасширеннаяПодсказка" id="749"/>
+				</InputField>
+				<InputField name="ТаблицаФайловИмя" id="751">
+					<DataPath>ТаблицаФайлов.Имя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаФайловИмяКонтекстноеМеню" id="752"/>
+					<ExtendedTooltip name="ТаблицаФайловИмяРасширеннаяПодсказка" id="753"/>
+				</InputField>
+				<InputField name="ТаблицаФайловВид" id="755">
+					<DataPath>ТаблицаФайлов.Вид</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаФайловВидКонтекстноеМеню" id="756"/>
+					<ExtendedTooltip name="ТаблицаФайловВидРасширеннаяПодсказка" id="757"/>
+				</InputField>
+				<InputField name="ТаблицаФайловДлительностьСекунд" id="759">
+					<DataPath>ТаблицаФайлов.ДлительностьСекунд</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаФайловДлительностьСекундКонтекстноеМеню" id="760"/>
+					<ExtendedTooltip name="ТаблицаФайловДлительностьСекундРасширеннаяПодсказка" id="761"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 		<LabelField name="СтрокаВложений" id="369">
@@ -668,6 +742,72 @@
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
+		</Attribute>
+		<Attribute name="ТаблицаФайлов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Вложения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вид" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыВложений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДлительностьСекунд" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность секунд</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
