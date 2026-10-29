@@ -1121,6 +1121,7 @@
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаЗаписиЗаметки</Form>
 			<Form>ФормаПросмотраФото</Form>
+			<Form>ФормаПрослушиванияАудио</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

@@ -79,15 +79,106 @@
 							<v8:content>Страница из базы</v8:content>
 						</v8:item>
 					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
 					<VerticalStretch>false</VerticalStretch>
 					<ExtendedTooltip name="СтраницаИзБазыРасширеннаяПодсказка" id="166"/>
 					<ChildItems>
 						<InputField name="Партнер" id="359">
 							<DataPath>Объект.Партнер</DataPath>
+							<Visible>false</Visible>
+							<ChoiceButton>false</ChoiceButton>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<QuickChoice>false</QuickChoice>
 							<ContextMenu name="ПартнерКонтекстноеМеню" id="360"/>
 							<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="361"/>
+							<Events>
+								<Event name="StartChoice">ПартнерНачалоВыбора</Event>
+							</Events>
 						</InputField>
+						<Button name="КнопкаПоказатьПартнеров" id="899">
+							<Type>UsualButton</Type>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.КнопкаПоказатьПартнеров</CommandName>
+							<BackColor>pal:Gray</BackColor>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбрать партнёра ▼</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаПоказатьПартнеровРасширеннаяПодсказка" id="900"/>
+						</Button>
+						<InputField name="ПоискПартнера" id="831">
+							<DataPath>ПоискПартнера</DataPath>
+							<Visible>false</Visible>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<EditTextUpdate>DontUse</EditTextUpdate>
+							<ContextMenu name="ПоискПартнераКонтекстноеМеню" id="832"/>
+							<ExtendedTooltip name="ПоискПартнераРасширеннаяПодсказка" id="833"/>
+							<Events>
+								<Event name="OnChange">ПоискПартнераПриИзменении</Event>
+								<Event name="EditTextChange">ПоискПартнераИзменениеТекстаРедактирования</Event>
+							</Events>
+						</InputField>
+						<Table name="СписокПартнеров" id="870">
+							<Representation>List</Representation>
+							<Visible>false</Visible>
+							<CommandBarLocation>None</CommandBarLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаПартнеров</DataPath>
+							<ShowCommandBar>false</ShowCommandBar>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокПартнеровКонтекстноеМеню" id="871"/>
+							<AutoCommandBar name="СписокПартнеровКоманднаяПанель" id="872"/>
+							<ExtendedTooltip name="СписокПартнеровРасширеннаяПодсказка" id="873"/>
+							<SearchStringAddition name="СписокПартнеровСтрокаПоиска" id="874">
+								<AdditionSource>
+									<Item>СписокПартнеров</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПартнеровСтрокаПоискаКонтекстноеМеню" id="875"/>
+								<ExtendedTooltip name="СписокПартнеровСтрокаПоискаРасширеннаяПодсказка" id="876"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокПартнеровСостояниеПросмотра" id="877">
+								<AdditionSource>
+									<Item>СписокПартнеров</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПартнеровСостояниеПросмотраКонтекстноеМеню" id="878"/>
+								<ExtendedTooltip name="СписокПартнеровСостояниеПросмотраРасширеннаяПодсказка" id="879"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокПартнеровУправлениеПоиском" id="880">
+								<AdditionSource>
+									<Item>СписокПартнеров</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПартнеровУправлениеПоискомКонтекстноеМеню" id="881"/>
+								<ExtendedTooltip name="СписокПартнеровУправлениеПоискомРасширеннаяПодсказка" id="882"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокПартнеровВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СписокПартнеровСсылка" id="891">
+									<DataPath>ТаблицаПартнеров.Ссылка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СписокПартнеровСсылкаКонтекстноеМеню" id="892"/>
+									<ExtendedTooltip name="СписокПартнеровСсылкаРасширеннаяПодсказка" id="893"/>
+								</InputField>
+								<InputField name="СписокПартнеровНаименование" id="895">
+									<DataPath>ТаблицаПартнеров.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СписокПартнеровНаименованиеКонтекстноеМеню" id="896"/>
+									<ExtendedTooltip name="СписокПартнеровНаименованиеРасширеннаяПодсказка" id="897"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</Page>
 				<Page name="СтраницаНовый" id="167">
@@ -484,11 +575,12 @@
 		</Table>
 		<Table name="ТаблицаВложений" id="726">
 			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<DataPath>ТаблицаФайлов</DataPath>
-			<ShowCommandBar>auto</ShowCommandBar>
+			<ShowCommandBar>false</ShowCommandBar>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ТаблицаВложенийКонтекстноеМеню" id="727"/>
 			<AutoCommandBar name="ТаблицаВложенийКоманднаяПанель" id="728"/>
@@ -523,6 +615,7 @@
 			<ChildItems>
 				<InputField name="ТаблицаФайловСсылка" id="747">
 					<DataPath>ТаблицаФайлов.Ссылка</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -537,14 +630,6 @@
 					<ContextMenu name="ТаблицаФайловИмяКонтекстноеМеню" id="752"/>
 					<ExtendedTooltip name="ТаблицаФайловИмяРасширеннаяПодсказка" id="753"/>
 				</InputField>
-				<InputField name="ТаблицаФайловВид" id="755">
-					<DataPath>ТаблицаФайлов.Вид</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТаблицаФайловВидКонтекстноеМеню" id="756"/>
-					<ExtendedTooltip name="ТаблицаФайловВидРасширеннаяПодсказка" id="757"/>
-				</InputField>
 				<InputField name="ТаблицаФайловДлительностьСекунд" id="759">
 					<DataPath>ТаблицаФайлов.ДлительностьСекунд</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -552,6 +637,14 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаФайловДлительностьСекундКонтекстноеМеню" id="760"/>
 					<ExtendedTooltip name="ТаблицаФайловДлительностьСекундРасширеннаяПодсказка" id="761"/>
+				</InputField>
+				<InputField name="ТаблицаФайловВид" id="755">
+					<DataPath>ТаблицаФайлов.Вид</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаФайловВидКонтекстноеМеню" id="756"/>
+					<ExtendedTooltip name="ТаблицаФайловВидРасширеннаяПодсказка" id="757"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -809,6 +902,99 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="ТаблицаПартнеров" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица партнеров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВсеПартнеры" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все партнеры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПоискПартнера" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск партнера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="СохранитьКонтакт" id="1">
@@ -885,6 +1071,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СохранитьИВернуться</Action>
+		</Command>
+		<Command name="КнопкаПоказатьПартнеров" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка показать партнеров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка показать партнеров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаПоказатьПартнеровНажатие</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

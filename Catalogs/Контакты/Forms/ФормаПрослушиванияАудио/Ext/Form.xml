@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowCommandBar>false</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="ПолеИмениАудио" id="1">
+			<DataPath>ИмяАудио</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>None</TitleLocation>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="ПолеИмениАудиоКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеИмениАудиоРасширеннаяПодсказка" id="3"/>
+		</LabelField>
+		<LabelDecoration name="НадписьВремени" id="20">
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="НадписьВремениКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="НадписьВремениРасширеннаяПодсказка" id="22"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаКнопок" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<Button name="КнопкаВоспроизвести" id="9">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<CommandName>Form.Command.КнопкаВоспроизвести</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>▶ Воспроизвести</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаВоспроизвестиРасширеннаяПодсказка" id="10"/>
+				</Button>
+				<Button name="КнопкаОстановить" id="11">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.КнопкаОстановить</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>■ Остановить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаОстановитьРасширеннаяПодсказка" id="12"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СсылкаНаВложение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на вложение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Вложения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяАудио" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя аудио</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДлительностьСекунд" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длительность секунд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КнопкаВоспроизвести" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка воспроизвести</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка воспроизвести</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаВоспроизвестиНажатие</Action>
+		</Command>
+		<Command name="КнопкаОстановить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка остановить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка остановить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КнопкаОстановитьНажатие</Action>
+		</Command>
+	</Commands>
+</Form>
