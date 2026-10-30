@@ -39,10 +39,10 @@
 		</UsualGroup>
 		<Table name="СписокВыставок" id="6">
 			<Representation>List</Representation>
-			<Visible>false</Visible>
 			<CommandBarLocation>None</CommandBarLocation>
 			<ReadOnly>true</ReadOnly>
 			<HeightInTableRows>3</HeightInTableRows>
+			<Header>false</Header>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
