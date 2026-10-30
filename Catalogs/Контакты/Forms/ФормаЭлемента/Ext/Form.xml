@@ -622,30 +622,56 @@
 					<ContextMenu name="ТаблицаФайловСсылкаКонтекстноеМеню" id="748"/>
 					<ExtendedTooltip name="ТаблицаФайловСсылкаРасширеннаяПодсказка" id="749"/>
 				</InputField>
-				<InputField name="ТаблицаФайловИмя" id="751">
-					<DataPath>ТаблицаФайлов.Имя</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТаблицаФайловИмяКонтекстноеМеню" id="752"/>
-					<ExtendedTooltip name="ТаблицаФайловИмяРасширеннаяПодсказка" id="753"/>
-				</InputField>
 				<InputField name="ТаблицаФайловДлительностьСекунд" id="759">
 					<DataPath>ТаблицаФайлов.ДлительностьСекунд</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаФайловДлительностьСекундКонтекстноеМеню" id="760"/>
 					<ExtendedTooltip name="ТаблицаФайловДлительностьСекундРасширеннаяПодсказка" id="761"/>
 				</InputField>
-				<InputField name="ТаблицаФайловВид" id="755">
-					<DataPath>ТаблицаФайлов.Вид</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoEditMode>true</AutoEditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТаблицаФайловВидКонтекстноеМеню" id="756"/>
-					<ExtendedTooltip name="ТаблицаФайловВидРасширеннаяПодсказка" id="757"/>
-				</InputField>
+				<ColumnGroup name="ТаблицаОтображенияВложений" id="958">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица отображения вложений</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица отображения вложений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Group>Horizontal</Group>
+					<FixInCard>true</FixInCard>
+					<ExtendedTooltip name="ТаблицаОтображенияВложенийРасширеннаяПодсказка" id="959"/>
+					<ChildItems>
+						<InputField name="ТаблицаФайловИмя" id="751">
+							<DataPath>ТаблицаФайлов.Имя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>pal:Gray</FooterBackColor>
+							<AutoEditMode>true</AutoEditMode>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТаблицаФайловИмяКонтекстноеМеню" id="752"/>
+							<ExtendedTooltip name="ТаблицаФайловИмяРасширеннаяПодсказка" id="753"/>
+						</InputField>
+						<InputField name="ТаблицаФайловВид" id="755">
+							<DataPath>ТаблицаФайлов.Вид</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>pal:Gray</FooterBackColor>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТаблицаФайловВидКонтекстноеМеню" id="756"/>
+							<ExtendedTooltip name="ТаблицаФайловВидРасширеннаяПодсказка" id="757"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
 			</ChildItems>
 		</Table>
 		<LabelField name="СтрокаВложений" id="369">

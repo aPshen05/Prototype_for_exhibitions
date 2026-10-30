@@ -6,53 +6,104 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<LabelDecoration name="ИдетЗапись" id="1">
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Идет запись</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="ИдетЗаписьКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ИдетЗаписьРасширеннаяПодсказка" id="3"/>
-		</LabelDecoration>
-		<LabelDecoration name="ТаймерЗаписи" id="4">
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Таймер записи</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="ТаймерЗаписиКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ТаймерЗаписиРасширеннаяПодсказка" id="6"/>
-		</LabelDecoration>
-		<Button name="КнопкаНачатьЗапись" id="11">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.КнопкаНачатьЗапись</CommandName>
-			<ExtendedTooltip name="КнопкаНачатьЗаписьРасширеннаяПодсказка" id="12"/>
-		</Button>
-		<Button name="КнопкаОстановить" id="7">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.КнопкаОстановить</CommandName>
+		<UsualGroup name="ГруппаЗаписиЗАметки" id="13">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Остановить</v8:content>
+					<v8:content>Группа записи з аметки</v8:content>
 				</v8:item>
 			</Title>
-			<ExtendedTooltip name="КнопкаОстановитьРасширеннаяПодсказка" id="8"/>
-		</Button>
-		<Button name="КнопкаСохранить" id="9">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.КнопкаСохранить</CommandName>
-			<Title>
+			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить</v8:content>
+					<v8:content>Группа записи з аметки</v8:content>
 				</v8:item>
-			</Title>
-			<ExtendedTooltip name="КнопкаСохранитьРасширеннаяПодсказка" id="10"/>
-		</Button>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаписиЗАметкиРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<LabelDecoration name="ИдетЗапись" id="1">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идет запись</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="ИдетЗаписьКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ИдетЗаписьРасширеннаяПодсказка" id="3"/>
+				</LabelDecoration>
+				<LabelDecoration name="ТаймерЗаписи" id="4">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таймер записи</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="ТаймерЗаписиКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ТаймерЗаписиРасширеннаяПодсказка" id="6"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаЗаписьИОстановка" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запись и остановка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запись и остановка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗаписьИОстановкаРасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<Button name="КнопкаНачатьЗапись" id="11">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<CommandName>Form.Command.КнопкаНачатьЗапись</CommandName>
+							<ExtendedTooltip name="КнопкаНачатьЗаписьРасширеннаяПодсказка" id="12"/>
+						</Button>
+						<Button name="КнопкаОстановить" id="7">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<CommandName>Form.Command.КнопкаОстановить</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Остановить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаОстановитьРасширеннаяПодсказка" id="8"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<Button name="КнопкаСохранить" id="9">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.КнопкаСохранить</CommandName>
+					<BackColor>pal:FirstBrand</BackColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаСохранитьРасширеннаяПодсказка" id="10"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">
@@ -156,7 +207,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Кнопка начать запись</v8:content>
+					<v8:content>Начать запись</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
