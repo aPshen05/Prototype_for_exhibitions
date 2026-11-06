@@ -732,6 +732,18 @@
 			<BackColor>pal:FirstBrand</BackColor>
 			<ExtendedTooltip name="СохранитьКонтактРасширеннаяПодсказка" id="273"/>
 		</Button>
+		<LabelField name="Ответственный" id="1147">
+			<DataPath>Объект.Ответственный</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="1148"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="1149"/>
+		</LabelField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
