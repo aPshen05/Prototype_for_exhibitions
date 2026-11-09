@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<ExchangePlan uuid="712be47a-f354-4bb2-84bb-e4de3ac885ce">
+		<InternalInfo>
+			<xr:ThisNode>bb0d8b61-2a31-4b10-91ce-5c73f2ae4546</xr:ThisNode>
+			<xr:GeneratedType name="ExchangePlanObject.ПланОбмена1" category="Object">
+				<xr:TypeId>e17818f3-19f2-46b9-8fe4-a7555c41d309</xr:TypeId>
+				<xr:ValueId>3030f12e-64cd-40a6-9b52-4dcc0f013788</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanRef.ПланОбмена1" category="Ref">
+				<xr:TypeId>05ab11af-3b3c-4b87-b162-d01f93c2cda9</xr:TypeId>
+				<xr:ValueId>fbcaf459-d987-473a-a273-0b654d40c5cc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanSelection.ПланОбмена1" category="Selection">
+				<xr:TypeId>4a60d743-c9dc-4d66-9394-fefbd33e5825</xr:TypeId>
+				<xr:ValueId>9d243b0c-3cb7-45ae-9853-bf45c052df8d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanList.ПланОбмена1" category="List">
+				<xr:TypeId>3826863b-52a0-4333-8b18-25feda2716ba</xr:TypeId>
+				<xr:ValueId>25a18e7f-5bad-4fdb-8b70-52bfc2bdf942</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanManager.ПланОбмена1" category="Manager">
+				<xr:TypeId>76e14322-2ed1-44e4-9be2-63b2e77f45ce</xr:TypeId>
+				<xr:ValueId>c6676140-7cc5-4a9e-96aa-e8b1906926f0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПланОбмена1</Name>
+			<Synonym/>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<CodeLength>9</CodeLength>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<DescriptionLength>25</DescriptionLength>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<EditType>InDialog</EditType>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<InputByString>
+				<xr:Field>ExchangePlan.ПланОбмена1.StandardAttribute.Description</xr:Field>
+				<xr:Field>ExchangePlan.ПланОбмена1.StandardAttribute.Code</xr:Field>
+			</InputByString>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<DefaultObjectForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<Characteristics/>
+			<BasedOn/>
+			<DistributedInfoBase>false</DistributedInfoBase>
+			<IncludeConfigurationExtensions>false</IncludeConfigurationExtensions>
+			<CreateOnInput>DontUse</CreateOnInput>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<DataHistory>DontUse</DataHistory>
+			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
+			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+		</Properties>
+		<ChildObjects/>
+	</ExchangePlan>
+</MetaDataObject>

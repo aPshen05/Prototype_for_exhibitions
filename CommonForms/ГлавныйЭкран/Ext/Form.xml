@@ -93,6 +93,7 @@
 			</ChildItems>
 		</Table>
 		<LabelDecoration name="ПодсказкаВыставки" id="114">
+			<Visible>false</Visible>
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -103,6 +104,14 @@
 			<ContextMenu name="ПодсказкаВыставкиКонтекстноеМеню" id="115"/>
 			<ExtendedTooltip name="ПодсказкаВыставкиРасширеннаяПодсказка" id="116"/>
 		</LabelDecoration>
+		<Button name="СинхронизироватьСERP" id="148">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<CommandName>Form.Command.СинхронизироватьСERP</CommandName>
+			<BackColor>pal:FirstBrand</BackColor>
+			<ExtendedTooltip name="СинхронизироватьСERPРасширеннаяПодсказка" id="149"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="СписокВыставок" id="5">
@@ -145,4 +154,21 @@
 			</Columns>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="СинхронизироватьСERP" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать СERP</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СинхронизироватьСERP</Action>
+		</Command>
+	</Commands>
 </Form>

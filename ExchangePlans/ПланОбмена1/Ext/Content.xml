@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExchangePlanContent xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Item>
+		<Metadata>Catalog.Контакты</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.ИдентификаторМенеджера</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog.Выставки</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.ТекущаяВыставка</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.ДатаВыбораВыставки</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog.ТемыИнтереса</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog.КонтактныеЛица</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog.Партнеры</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog.Вложения</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>InformationRegister.НастройкиОбмена</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog.Пользователи</Metadata>
+		<AutoRecord>Allow</AutoRecord>
+	</Item>
+</ExchangePlanContent>

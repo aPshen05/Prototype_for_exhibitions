@@ -833,7 +833,7 @@
 ИЗ
     Справочник.Вложения КАК Вложения
 ГДЕ
-    Вложения.Контакт = &amp;Контакт</QueryText>
+    Вложения.Владелец = &amp;Контакт</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Ссылка</dcssch:dataPath>
 					<dcssch:field>Ссылка</dcssch:field>

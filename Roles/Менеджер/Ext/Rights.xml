@@ -4,6 +4,13 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.Регион</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Контакты</name>
 		<right>
 			<name>Read</name>
@@ -55,13 +62,6 @@
 			</restrictionByCondition>
 		</right>
 		<right>
-			<name>Delete</name>
-			<value>false</value>
-			<restrictionByCondition>
-				<condition>ГДЕ Ответственный = &amp;ТекущийПользователь</condition>
-			</restrictionByCondition>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
@@ -87,10 +87,31 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Партнеры.Attribute.ИдентификаторERP</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonForm.ЭкранВыставки</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.Вид</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.Город</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -137,6 +158,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.Тип</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonForm.ГлавныйЭкран</name>
 		<right>
 			<name>View</name>
@@ -156,6 +184,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.Attribute.Поставщик</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -189,6 +224,34 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.Значение</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефонаБезКодов</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.Attribute.ОсновнойМенеджер</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.ДоменноеИмяСервера</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ТемыИнтереса</name>
 		<right>
 			<name>Read</name>
@@ -202,6 +265,17 @@
 	<object>
 		<name>Catalog.Пользователи.Attribute.ИдентификаторПользователяИБ</name>
 		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.Attribute.НаименованиеПолное</name>
+		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -211,6 +285,34 @@
 		<right>
 			<name>Get</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.АдресЭП</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.Страна</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.Attribute.Клиент</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.ЗначенияПолей</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -229,18 +331,105 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Партнеры.Attribute.Комментарий</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Партнеры</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефона</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.ВидДляСписка</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -248,40 +437,88 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<field>DataVersion</field>
+				<field>DeletionMark</field>
+				<field>Description</field>
+				<field>Owner</field>
+				<field>Predefined</field>
+				<field>PredefinedDataName</field>
+				<field>Ref</field>
+				<field>Вид</field>
+				<field>Данные</field>
+				<field>ДлительностьСекунд</field>
+				<field>Имя</field>
+				<field>Размер</field>
+				<condition>ГДЕ Владелец.Ответственный = &amp;ТекущийПользователь</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>ГДЕ Владелец.Ответственный = &amp;ТекущийПользователь</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Update</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>ГДЕ Владелец.Ответственный = &amp;ТекущийПользователь</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
-		<name>Catalog.Пользователи.Attribute.Комментарий</name>
+		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.Представление</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Пользователи</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
+		<name>Catalog.Пользователи.Attribute.Комментарий</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Партнеры.Attribute.ЮрФизЛицо</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -290,12 +527,20 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Predefined</name>
 		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Ref</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -304,12 +549,20 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.DeletionMark</name>
 		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.IsFolder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -318,12 +571,20 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Owner</name>
 		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Parent</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -332,6 +593,10 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Description</name>
 		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -339,12 +604,20 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Code</name>
 		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.Attribute.Недействителен</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
