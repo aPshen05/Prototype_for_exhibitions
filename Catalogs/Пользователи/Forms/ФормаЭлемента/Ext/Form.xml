@@ -53,6 +53,16 @@
 					<ContextMenu name="ИдентификаторПользователяИБКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="ИдентификаторПользователяИБРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="ИдентификаторERP" id="64">
+					<DataPath>Объект.ИдентификаторERP</DataPath>
+					<ContextMenu name="ИдентификаторERPКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ИдентификаторERPРасширеннаяПодсказка" id="66"/>
+				</LabelField>
+				<LabelField name="ИмяПользователяИБ" id="68">
+					<DataPath>Объект.ИмяПользователяИБ</DataPath>
+					<ContextMenu name="ИмяПользователяИБКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ИмяПользователяИБРасширеннаяПодсказка" id="70"/>
+				</LabelField>
 			</ChildItems>
 		</UsualGroup>
 		<Button name="КнопкаСоздатьПользователяИБ" id="28">

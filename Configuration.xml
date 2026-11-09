@@ -277,6 +277,8 @@
 			<CommonModule>ПользователиИБСлужебный</CommonModule>
 			<CommonModule>ОбменСERP</CommonModule>
 			<CommonModule>ОбменСERPВызовСервера</CommonModule>
+			<CommonModule>ЗагрузкаПользователейERP</CommonModule>
+			<CommonModule>ЗагрузкаПользователейERPОсновнойСервер</CommonModule>
 			<ExchangePlan>ПланОбмена1</ExchangePlan>
 			<Constant>ТекущаяВыставка</Constant>
 			<Constant>ДатаВыбораВыставки</Constant>

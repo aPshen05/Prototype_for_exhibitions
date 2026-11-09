@@ -112,6 +112,12 @@
 			<BackColor>pal:FirstBrand</BackColor>
 			<ExtendedTooltip name="СинхронизироватьСERPРасширеннаяПодсказка" id="149"/>
 		</Button>
+		<Button name="ЗагрузитьТестМенеджера" id="155">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ЗагрузитьТестМенеджера</CommandName>
+			<ExtendedTooltip name="ЗагрузитьТестМенеджераРасширеннаяПодсказка" id="156"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="СписокВыставок" id="5">
@@ -169,6 +175,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СинхронизироватьСERP</Action>
+		</Command>
+		<Command name="ЗагрузитьТестМенеджера" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить менеджера из ERP</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить тест менеджера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьТестМенеджера</Action>
 		</Command>
 	</Commands>
 </Form>

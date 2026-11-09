@@ -13,6 +13,9 @@
 		<Metadata>Constant.ИдентификаторМенеджера</Metadata>
 	</UsedItem>
 	<UsedItem>
+		<Metadata>CommonModule.ЗагрузкаПользователейERPОсновнойСервер</Metadata>
+	</UsedItem>
+	<UsedItem>
 		<Metadata>Role.ПолныеПрава</Metadata>
 	</UsedItem>
 	<UsedItem>
@@ -37,6 +40,9 @@
 		<Metadata>Catalog.ТемыИнтереса</Metadata>
 	</UsedItem>
 	<UsedItem>
+		<Metadata>ExchangePlan.ПланОбмена1</Metadata>
+	</UsedItem>
+	<UsedItem>
 		<Metadata>CommonModule.ОбменСERP</Metadata>
 	</UsedItem>
 	<UsedItem>
@@ -44,6 +50,9 @@
 	</UsedItem>
 	<UsedItem>
 		<Metadata>Enum.ВидыВложений</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>CommonModule.ЗагрузкаПользователейERP</Metadata>
 	</UsedItem>
 	<UsedItem>
 		<Metadata>Catalog.КонтактныеЛица</Metadata>
@@ -66,6 +75,50 @@
 	<UsedItem>
 		<Metadata>Catalog.Пользователи</Metadata>
 	</UsedItem>
+	<PriorityItem>
+		<Metadata>Catalog.Контакты</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>CommonForm.ЭкранВыставки</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>CommonForm.ГлавныйЭкран</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>Catalog.Выставки</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>CommonModule.ПользователиИБСлужебный</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>Catalog.ТемыИнтереса</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>Catalog.КонтактныеЛица</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>Catalog.Партнеры</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>Catalog.Вложения</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>CommonModule.РаботаСВыставкамиСервер</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
+	<PriorityItem>
+		<Metadata>Catalog.Пользователи</Metadata>
+		<Priority>LocalServer</Priority>
+	</PriorityItem>
 	<DataExchangeSettings>
 		<ExchangePlanUUID>ExchangePlan.ПланОбмена1</ExchangePlanUUID>
 		<ExchangeOnChangeData>true</ExchangeOnChangeData>
