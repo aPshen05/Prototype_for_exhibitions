@@ -283,8 +283,11 @@
 			<Constant>ТекущаяВыставка</Constant>
 			<Constant>ДатаВыбораВыставки</Constant>
 			<Constant>ИдентификаторМенеджера</Constant>
+			<Constant>ИмяПользователяОбменаERP</Constant>
+			<Constant>ПарольОбменаERP</Constant>
 			<CommonForm>ГлавныйЭкран</CommonForm>
 			<CommonForm>ЭкранВыставки</CommonForm>
+			<CommonForm>ВыборМенеджеровERP</CommonForm>
 			<Catalog>Выставки</Catalog>
 			<Catalog>ТемыИнтереса</Catalog>
 			<Catalog>Партнеры</Catalog>
