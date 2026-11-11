@@ -106,6 +106,7 @@
 		</LabelDecoration>
 		<Button name="СинхронизироватьСERP" id="148">
 			<Type>UsualButton</Type>
+			<Visible>false</Visible>
 			<HorizontalStretch>true</HorizontalStretch>
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<CommandName>Form.Command.СинхронизироватьСERP</CommandName>
@@ -114,6 +115,7 @@
 		</Button>
 		<Button name="ЗагрузитьТестМенеджера" id="155">
 			<Type>UsualButton</Type>
+			<Visible>false</Visible>
 			<HorizontalStretch>true</HorizontalStretch>
 			<CommandName>Form.Command.ЗагрузитьТестМенеджера</CommandName>
 			<ExtendedTooltip name="ЗагрузитьТестМенеджераРасширеннаяПодсказка" id="156"/>

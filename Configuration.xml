@@ -32,11 +32,11 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>Конфигурация</Name>
+			<Name>МобильныеКонтакты</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выставка</v8:content>
+					<v8:content>Мобильные контакты</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -50,7 +50,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor/>
-			<Version/>
+			<Version>0.7.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -270,24 +270,24 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>МобильныеКонтакты</Subsystem>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
-			<Role>ПолныеПрава</Role>
 			<Role>Менеджер</Role>
+			<Role>ПолныеПрава</Role>
 			<CommonModule>РаботаСВыставкамиСервер</CommonModule>
 			<CommonModule>ПользователиИБСлужебный</CommonModule>
 			<CommonModule>ОбменСERP</CommonModule>
 			<CommonModule>ОбменСERPВызовСервера</CommonModule>
 			<CommonModule>ЗагрузкаПользователейERP</CommonModule>
-			<CommonModule>ЗагрузкаПользователейERPОсновнойСервер</CommonModule>
 			<ExchangePlan>ПланОбмена1</ExchangePlan>
+			<CommonCommand>СинхронизироватьСERP</CommonCommand>
 			<Constant>ТекущаяВыставка</Constant>
-			<Constant>ДатаВыбораВыставки</Constant>
-			<Constant>ИдентификаторМенеджера</Constant>
 			<Constant>ИмяПользователяОбменаERP</Constant>
-			<Constant>ПарольОбменаERP</Constant>
+			<Constant>ПарольПользователяОбменаERP</Constant>
+			<Constant>АдресСервераERP</Constant>
+			<Constant>ПортСервераERP</Constant>
 			<CommonForm>ГлавныйЭкран</CommonForm>
 			<CommonForm>ЭкранВыставки</CommonForm>
-			<CommonForm>ВыборМенеджеровERP</CommonForm>
 			<Catalog>Выставки</Catalog>
 			<Catalog>ТемыИнтереса</Catalog>
 			<Catalog>Партнеры</Catalog>

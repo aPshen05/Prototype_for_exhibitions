@@ -1,41 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <StandaloneContent xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<UsedItem>
-		<Metadata>CommonModule.ОбменСERPВызовСервера</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>CommonForm.ЭкранВыставки</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>CommonModule.ЗагрузкаПользователейERPОсновнойСервер</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>Role.ПолныеПрава</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>CommonForm.ГлавныйЭкран</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>Role.Менеджер</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>CommonModule.ПользователиИБСлужебный</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>ExchangePlan.ПланОбмена1</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>CommonModule.ОбменСERP</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>SessionParameter.ТекущийПользователь</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>CommonModule.ЗагрузкаПользователейERP</Metadata>
-	</UsedItem>
-	<UsedItem>
-		<Metadata>CommonModule.РаботаСВыставкамиСервер</Metadata>
-	</UsedItem>
 	<DataExchangeSettings>
 		<ExchangePlanUUID>ExchangePlan.ПланОбмена1</ExchangePlanUUID>
 		<ExchangeOnChangeData>true</ExchangeOnChangeData>

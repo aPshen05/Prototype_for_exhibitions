@@ -16,34 +16,6 @@
 			<name>Read</name>
 			<value>true</value>
 			<restrictionByCondition>
-				<field>Code</field>
-				<field>DataVersion</field>
-				<field>DeletionMark</field>
-				<field>Description</field>
-				<field>Email</field>
-				<field>Predefined</field>
-				<field>PredefinedDataName</field>
-				<field>Ref</field>
-				<field>Выставка</field>
-				<field>ДатаОтправки</field>
-				<field>ДатаСледующегоШага</field>
-				<field>ДатаФиксации</field>
-				<field>Договоренность</field>
-				<field>Должность</field>
-				<field>ИНН</field>
-				<field>ИдентификаторМобильный</field>
-				<field>Комментарий</field>
-				<field>КонтактноеЛицо</field>
-				<field>НаименованиеОрганизации</field>
-				<field>Ответственный</field>
-				<field>Отправлен</field>
-				<field>Партнер</field>
-				<field>Телефон</field>
-				<field>Температура</field>
-				<field>Темы</field>
-				<field>Темы.LineNumber</field>
-				<field>Темы.Тема</field>
-				<field>ФИОКонтакта</field>
 				<condition>ГДЕ Ответственный = &amp;ТекущийПользователь</condition>
 			</restrictionByCondition>
 		</right>
@@ -115,7 +87,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.Конфигурация</name>
+		<name>Configuration.МобильныеКонтакты</name>
 		<right>
 			<name>ThinClient</name>
 			<value>true</value>
@@ -156,6 +128,10 @@
 			<name>SaveUserData</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>Output</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Catalog.Партнеры.TabularSection.КонтактнаяИнформация.Attribute.Тип</name>
@@ -185,6 +161,10 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Catalog.Партнеры.Attribute.Поставщик</name>
@@ -197,25 +177,6 @@
 		<name>Constant.ТекущаяВыставка</name>
 		<right>
 			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Constant.ДатаВыбораВыставки</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -261,13 +222,13 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.Attribute.ИдентификаторПользователяИБ</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -368,6 +329,10 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Catalog.Партнеры.Attribute.Комментарий</name>
@@ -384,6 +349,10 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -541,10 +510,6 @@
 	<object>
 		<name>Catalog.Пользователи.Attribute.Комментарий</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -557,11 +522,22 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Пользователи.StandardAttribute.PredefinedDataName</name>
+		<name>Catalog.Пользователи</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
 		<right>
 			<name>View</name>
-			<value>false</value>
+			<value>true</value>
 		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.PredefinedDataName</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -570,20 +546,12 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Predefined</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -592,20 +560,12 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.DeletionMark</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.IsFolder</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -614,20 +574,12 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Owner</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -636,10 +588,6 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Description</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -647,20 +595,12 @@
 	<object>
 		<name>Catalog.Пользователи.StandardAttribute.Code</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Пользователи.Attribute.Недействителен</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

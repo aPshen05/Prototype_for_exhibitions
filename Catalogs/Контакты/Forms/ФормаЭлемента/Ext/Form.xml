@@ -445,12 +445,6 @@
 			<ExtendedTooltip name="СсылкаКомментарийРасширеннаяПодсказка" id="256"/>
 		</InputField>
 		<UsualGroup name="ГруппаМедиа" id="258">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>ГруппаМедиа</v8:content>
-				</v8:item>
-			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

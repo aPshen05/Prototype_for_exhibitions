@@ -1,35 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<Constant uuid="dabecdcd-8aff-4337-a8b5-f4a0429cbd3e">
+	<Constant uuid="60cab6b7-cd67-4aea-ba90-fc54133638b4">
 		<InternalInfo>
-			<xr:GeneratedType name="ConstantManager.ПарольОбменаERP" category="Manager">
-				<xr:TypeId>a61beabb-f939-42c1-8ce4-f071eb626f02</xr:TypeId>
-				<xr:ValueId>05d1fd92-6c92-4658-8760-df5acd3196cc</xr:ValueId>
+			<xr:GeneratedType name="ConstantManager.ПортСервераERP" category="Manager">
+				<xr:TypeId>6e5464d7-3e9b-430c-a999-f63a96292e2a</xr:TypeId>
+				<xr:ValueId>4766b78d-2111-4ee6-acb5-d0775a4a260c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ConstantValueManager.ПарольОбменаERP" category="ValueManager">
-				<xr:TypeId>a57f8ac9-5a6e-4e22-993c-11ceb9a0af29</xr:TypeId>
-				<xr:ValueId>1f36225f-2df9-480f-bf2e-e9a2f150edeb</xr:ValueId>
+			<xr:GeneratedType name="ConstantValueManager.ПортСервераERP" category="ValueManager">
+				<xr:TypeId>fce2c7ba-2e1a-472b-a0a2-b0ce941e3fcd</xr:TypeId>
+				<xr:ValueId>0ea4be20-1464-4bb5-adfa-a1f7d8f7e04a</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ConstantValueKey.ПарольОбменаERP" category="ValueKey">
-				<xr:TypeId>982fa566-4f44-42ad-81cd-ac34b19d242d</xr:TypeId>
-				<xr:ValueId>cbbf18db-f1df-468c-bde4-42abe8e02fae</xr:ValueId>
+			<xr:GeneratedType name="ConstantValueKey.ПортСервераERP" category="ValueKey">
+				<xr:TypeId>37af29b2-0084-47b6-a2fd-061f180434c7</xr:TypeId>
+				<xr:ValueId>5dde6f97-1f33-47e5-aee6-095ccf193c24</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПарольОбменаERP</Name>
+			<Name>ПортСервераERP</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пароль обмена ERP</v8:content>
+					<v8:content>Порт сервера ERP</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>250</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 			<UseStandardCommands>true</UseStandardCommands>
 			<DefaultForm/>

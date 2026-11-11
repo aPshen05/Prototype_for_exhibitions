@@ -5,19 +5,11 @@
 		<AutoRecord>Allow</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>Constant.ИдентификаторМенеджера</Metadata>
-		<AutoRecord>Allow</AutoRecord>
-	</Item>
-	<Item>
 		<Metadata>Catalog.Выставки</Metadata>
 		<AutoRecord>Allow</AutoRecord>
 	</Item>
 	<Item>
 		<Metadata>Constant.ТекущаяВыставка</Metadata>
-		<AutoRecord>Allow</AutoRecord>
-	</Item>
-	<Item>
-		<Metadata>Constant.ДатаВыбораВыставки</Metadata>
 		<AutoRecord>Allow</AutoRecord>
 	</Item>
 	<Item>
